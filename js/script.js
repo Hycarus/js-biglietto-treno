@@ -1,4 +1,5 @@
 let kilometers = parseInt(prompt('Quanti kilometri vuoi percorrere oggi?'));
+console.log(kilometers);
 let age = parseInt(prompt('Quanti anni hai?'));
 const price = 0.21;
 let finalPrice = document.getElementById('prezzo');
