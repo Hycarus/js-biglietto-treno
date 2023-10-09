@@ -1,4 +1,15 @@
-let kilometers = prompt('Quanti kilometri vuoi percorrere oggi?');
-let age = prompt('Quanti anni hai?');
+let kilometers = parseInt(prompt('Quanti kilometri vuoi percorrere oggi?'));
+let age = parseInt(prompt('Quanti anni hai?'));
 const price = 0.21;
+let totalPrice = (price * kilometers);
+let finalPrice = document.getElementById('prezzo');
 
+if(age > 65){
+    totalPrice = totalPrice - (totalPrice * 40 / 100);
+    finalPrice.innerHTML = totalPrice;
+} else if(age < 18){
+    totalPrice = totalPrice - (totalPrice * 20 / 100);
+    finalPrice.innerHTML = totalPrice;
+} else{
+    finalPrice.innerHTML = totalPrice;
+}
