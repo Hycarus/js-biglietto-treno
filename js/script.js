@@ -17,5 +17,7 @@ if(age > 65){
     totalPrice = (totalPrice - (totalPrice * 20 / 100)).toFixed(2);
     finalPrice.innerHTML = totalPrice + '\u20AC';
 }
-finalPrice.innerHTML = totalPrice + '\u20AC';
+finalPrice.innerHTML = `
+${totalPrice} \u20AC
+`
 
